@@ -1,3 +1,7 @@
 {
-  "item.terrafied.bedrock_shard": "Bedrock Shard"
+  "item.terrafied.bedrock_shard": "Bedrock Shard",
+
+  "block.terrafied.refined_bedrock": "Refined Bedrock",
+
+  "creativetab:terrafied_tab": "Terrafied Tab"
 }

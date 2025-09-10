@@ -1,6 +1,8 @@
 package net.enter.terrafied;
 
 import com.mojang.logging.LogUtils;
+import net.enter.terrafied.block.ModBlocks;
+import net.enter.terrafied.item.ModCreativeModTabs;
 import net.enter.terrafied.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,7 +29,10 @@ public class Terrafied
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
