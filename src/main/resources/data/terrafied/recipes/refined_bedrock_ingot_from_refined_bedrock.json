@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": [
+    {
+      "item": "terrafied:refined_bedrock"
+    }
+  ],
+  "result": {
+    "item": "terrafied:refined_bedrock_ingot",
+    "count": 1
+  },
+  "experience": 2.0,
+  "cookingtime": 800
+}

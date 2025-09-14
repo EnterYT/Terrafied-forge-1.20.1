@@ -15,6 +15,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
             // The basic of Terrafied
 
+    public static final RegistryObject<Item> REFINED_BEDROCK_INGOT = ITEMS.register("refined_bedrock_ingot",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> BEDROCK_PLATE = ITEMS.register("bedrock_plate",
             () -> new Item(new Item.Properties()));
             // Can be used as cover for upgraded versions of mechanisms
