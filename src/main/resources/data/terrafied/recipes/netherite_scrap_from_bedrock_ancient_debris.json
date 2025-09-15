@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": [
+    {
+      "item": "terrafied:bedrock_ancient_debris"
+    }
+  ],
+  "result": {
+    "item": "minecraft:netherite_scrap",
+    "count": 2
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

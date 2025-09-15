@@ -3,6 +3,9 @@
   "item.terrafied.refined_bedrock_ingot": "Refined Bedrock Ingot",
 
   "block.terrafied.refined_bedrock": "Refined Bedrock",
+  "block.terrafied.bedrock_diamond_ore": "Bedrock Diamond Ore",
+  "block.terrafied.bedrock_ancient_debris": "Bedrock Ancient Debris",
+
   "block.terrafied.thermal_shock_blaster": "Thermal Shock Blaster",
 
   "creativetab:terrafied_tab": "Terrafied Tab"
