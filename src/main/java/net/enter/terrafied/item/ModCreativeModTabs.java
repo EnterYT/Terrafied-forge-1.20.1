@@ -25,7 +25,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.BEDROCK_SHARD.get());
                         pOutput.accept(ModItems.REFINED_BEDROCK_INGOT.get());
 
-//                        pOutput.accept(ModBlocks.THERMAL_SHOCK_BLASTER.get());
+                        pOutput.accept(ModBlocks.THERMAL_SHOCK_BLASTER.get());
                     })
                     .build());
 

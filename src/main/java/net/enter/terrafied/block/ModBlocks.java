@@ -21,7 +21,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> REFINED_BEDROCK  = registryBlock("refined_bedrock",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)));
 
-    public static final RegistryObject<Block> THERMAL_SHOCK_BLASTER = registryBlock("bedrock_miner",
+    public static final RegistryObject<Block> THERMAL_SHOCK_BLASTER = registryBlock("thermal_shock_blaster",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
             // Uses unique resistance of netherite against extreme temperatures to cause thermal shock of the bedrock
             // Base of netherite block, has interface, requires constant refill of consumables (Any cold block and Any fuel)

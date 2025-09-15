@@ -7,13 +7,10 @@
     "###"
   ],
   "key": {
-    "#": "terrafied:bedrock_shard"
-  },
-  "ingredients": [
-    {
+    "#": {
       "item": "terrafied:bedrock_shard"
     }
-  ],
+  },
   "result": {
     "item": "minecraft:bedrock",
     "count": 1

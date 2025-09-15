@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "terrafied:block/thermal_shock_blaster_bottom",
+    "up": "terrafied:block/thermal_shock_blaster_top",
+    "north": "terrafied:block/thermal_shock_blaster_front",
+    "east": "terrafied:block/thermal_shock_blaster_side",
+    "south": "terrafied:block/thermal_shock_blaster_side",
+    "west": "terrafied:block/thermal_shock_blaster_side",
+    "particle": "minecraft:block/end_stone_bricks"
+  }
+}
