@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ENE",
+    "ERE",
+    "OBO"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:end_stone_bricks"
+    },
+    "N": {
+      "item": "minecraft:netherite_block"
+    },
+    "R": {
+      "item": "minecraft:repeater"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "B": {
+      "item": "minecraft:blast_furnace"
+    }
+  },
+  "result": {
+    "item": "terrafied:thermal_shock_blaster",
+    "count": 1
+  }
+}
