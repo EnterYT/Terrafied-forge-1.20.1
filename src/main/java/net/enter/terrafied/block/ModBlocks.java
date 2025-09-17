@@ -37,6 +37,9 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             ));
 
+    public static final RegistryObject<Block> BEDROCK_METAL_BLOCK = registryBlock("bedrock_metal_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
+
     public static final RegistryObject<Block> THERMAL_SHOCK_BLASTER = registryBlock("thermal_shock_blaster",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(25.0F, 1200.0F)
