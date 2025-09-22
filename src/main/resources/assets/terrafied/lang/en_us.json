@@ -1,7 +1,7 @@
 {
   "item.terrafied.bedrock_shard": "Bedrock Shard",
-  "item.terrafied.bedrock_metal_ingot": "Refined Bedrock Ingot",
-  "item.terrafied.bedrock_metal_nugget": "Refined Bedrock Nugget",
+  "item.terrafied.bedrock_metal_ingot": "Bedrock Metal Ingot",
+  "item.terrafied.bedrock_metal_nugget": "Bedrock Metal Nugget",
 
   "block.terrafied.refined_bedrock": "Refined Bedrock",
   "block.terrafied.bedrock_metal_block": "Bedrock Metal Block",

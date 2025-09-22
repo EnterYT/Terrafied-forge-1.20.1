@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "terrafied:bedrock_metal_block"
+      "item": "terrafied:bedrock_metal_ingot"
     }
   ],
   "result": {
-    "item": "terrafied:bedrock_metal_ingot",
+    "item": "terrafied:bedrock_metal_nugget",
     "count": 9
   }
 }

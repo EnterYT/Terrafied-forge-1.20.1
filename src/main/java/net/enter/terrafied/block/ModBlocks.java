@@ -25,11 +25,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> BEDROCK_DIAMOND_ORE = registryBlock("bedrock_diamond_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
                     .strength(100.0F, 1200.0F), UniformInt.of(4, 8)));
-    public static final RegistryObject<Block> BEDROCK_ANCIENT_DEBRIS = registryBlock("bedrock_ancient_debris",
+    public static final RegistryObject<Block> BEDROCK_ANCIENT_DEBRIS = registryFireproofBlock("bedrock_ancient_debris",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
                     .strength(100.0F, 1200.0F), UniformInt.of(6, 10)));
 
-    public static final RegistryObject<Block> REFINED_BEDROCK  = registryBlock("refined_bedrock",
+    public static final RegistryObject<Block> REFINED_BEDROCK = registryFireproofBlock("refined_bedrock",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(100.0F, 1200.0F)
                     .mapColor(MapColor.COLOR_BLACK)
@@ -37,7 +37,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             ));
 
-    public static final RegistryObject<Block> BEDROCK_METAL_BLOCK = registryBlock("bedrock_metal_block",
+    public static final RegistryObject<Block> BEDROCK_METAL_BLOCK = registryFireproofBlock("bedrock_metal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
 
     public static final RegistryObject<Block> THERMAL_SHOCK_BLASTER = registryBlock("thermal_shock_blaster",
@@ -68,9 +68,19 @@ public class ModBlocks {
         registerBlockItem(name, toReturn);
         return toReturn;
     }
+    private static <T extends Block> RegistryObject<T> registryFireproofBlock(String name, Supplier<T> block){
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerFireproofBlockItem(name, toReturn);
+        return toReturn;
+    }
 
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
          return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    private static <T extends Block> RegistryObject<Item> registerFireproofBlockItem(String name, RegistryObject<T> block) {
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+                new Item.Properties().fireResistant()));
     }
 
     public static void register(IEventBus eventBus){

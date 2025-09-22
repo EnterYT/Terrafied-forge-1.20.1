@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.BEDROCK_DIAMOND_ORE.get());
                         pOutput.accept(ModBlocks.BEDROCK_ANCIENT_DEBRIS.get());
                         pOutput.accept(ModItems.BEDROCK_SHARD.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_NUGGET.get());
                         pOutput.accept(ModItems.BEDROCK_METAL_INGOT.get());
                         pOutput.accept(ModBlocks.BEDROCK_METAL_BLOCK.get());
 
