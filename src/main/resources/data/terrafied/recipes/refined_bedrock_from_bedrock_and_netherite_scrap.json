@@ -11,7 +11,7 @@
       "item": "minecraft:netherite_scrap"
     },
     "B": {
-      "item": "minecraft:bedrock"
+      "item": "terrafied:bedrock"
     }
   },
   "result": {

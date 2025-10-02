@@ -2,13 +2,19 @@
   "item.terrafied.bedrock_shard": "Bedrock Shard",
   "item.terrafied.bedrock_metal_ingot": "Bedrock Metal Ingot",
   "item.terrafied.bedrock_metal_nugget": "Bedrock Metal Nugget",
+  "item.terrafied.bedrock_upgrade_smiting_template": "Bedrock Upgrade Smiting Template",
 
+  "block.terrafied.bedrock": "Bedrock",
   "block.terrafied.refined_bedrock": "Refined Bedrock",
   "block.terrafied.bedrock_metal_block": "Bedrock Metal Block",
   "block.terrafied.bedrock_diamond_ore": "Bedrock Diamond Ore",
   "block.terrafied.bedrock_ancient_debris": "Bedrock Ancient Debris",
+  "block.terrafied.cracked_bedrock": "Cracked Bedrock",
+
 
   "block.terrafied.thermal_shock_blaster": "Thermal Shock Blaster",
+
+  "item.terrafied.rift_sensor": "Rift Sensor",
 
   "creativetab:terrafied_tab": "Terrafied Tab"
 }

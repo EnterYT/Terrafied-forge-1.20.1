@@ -1,6 +1,8 @@
 package net.enter.terrafied.block;
 
 import net.enter.terrafied.Terrafied;
+import net.enter.terrafied.block.custom.CrackedBedrock;
+import net.enter.terrafied.block.custom.TerrafiedBedrock;
 import net.enter.terrafied.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -22,6 +24,9 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Terrafied.MOD_ID);
 
+    public static final RegistryObject<Block> BEDROCK = registryBlock("bedrock",
+            () -> new TerrafiedBedrock(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> BEDROCK_DIAMOND_ORE = registryBlock("bedrock_diamond_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
                     .strength(100.0F, 1200.0F), UniformInt.of(4, 8)));
@@ -49,13 +54,15 @@ public class ModBlocks {
             ));
             // Uses unique resistance of netherite against extreme temperatures to cause thermal shock of the bedrock
             // Base of netherite block, has interface, requires constant refill of consumables (Any cold block and Any fuel)
-            // First machine to mine bedrock. Gets Bedrock Shard from breaking bedrock.
+            // Basically, the crusher of the mod. Can also crush bedrock.
 
-    public static final RegistryObject<Block> HIGH_ACCURACY_PULSAR = registryBlock("high_accuracy_pulsar",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
-            // Uses sonar scanning to find weak spots of bedrock, then punches there
-            // Base of netherite block, has interface, requires energy to function.
-            // Next step technology of mining bedrock. Gets Bedrock Shard from breaking bedrock.
+    public static final RegistryObject<Block> CRACKED_BEDROCK = registryBlock("cracked_bedrock",
+            () -> new CrackedBedrock(BlockBehaviour.Properties.of()
+                    .strength(100.0F, 1200.F)
+                    .mapColor(MapColor.COLOR_BLACK)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> 4)
+            ));
 
     public static final RegistryObject<Block> HIGH_PRESSURE_CUTTER = registryBlock("high_pressure_cutter",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.PISTON)));

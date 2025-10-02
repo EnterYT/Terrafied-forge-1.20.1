@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "terrafied:block/cracked_bedrock",
+    "particle": "minecraft:block/bedrock"
+  }
+}
