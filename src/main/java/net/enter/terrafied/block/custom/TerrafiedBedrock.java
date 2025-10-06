@@ -2,21 +2,22 @@ package net.enter.terrafied.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class TerrafiedBedrock extends Block {
     public TerrafiedBedrock(Properties pProperties) {
         super(pProperties);
-    }
-
-    @Override
-    public float getDestroyProgress(BlockState pState, Player pPlayer, BlockGetter pLevel, BlockPos pPos) {
-        return 100.0F;
     }
 
     @Override
@@ -30,5 +31,11 @@ public class TerrafiedBedrock extends Block {
 
             pLevel.addParticle(ParticleTypes.MYCELIUM, x, y, z, 0, 0.5, 0);
         }
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+        pTooltip.add(Component.translatable("tooltip.terrafied.bedrock"));
+        super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
     }
 }

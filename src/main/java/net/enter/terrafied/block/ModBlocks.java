@@ -26,6 +26,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BEDROCK = registryBlock("bedrock",
             () -> new TerrafiedBedrock(BlockBehaviour.Properties.of()
+                    .strength(150.0F, 1200.0F)
                     .requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> BEDROCK_DIAMOND_ORE = registryBlock("bedrock_diamond_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)

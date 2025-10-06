@@ -16,5 +16,9 @@
 
   "item.terrafied.rift_sensor": "Rift Sensor",
 
+  "tooltip.terrafied.cracked_bedrock": "Generates on among other bedrock blocks",
+  "tooltip.terrafied.bedrock": "Fragile version of classic bedrock",
+  "tooltip.terrafied.rift_sensor": "Scans current chunk for rifts on bedrock level",
+
   "creativetab:terrafied_tab": "Terrafied Tab"
 }
