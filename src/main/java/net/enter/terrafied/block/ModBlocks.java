@@ -4,9 +4,14 @@ import net.enter.terrafied.Terrafied;
 import net.enter.terrafied.block.custom.CrackedBedrock;
 import net.enter.terrafied.block.custom.TerrafiedBedrock;
 import net.enter.terrafied.item.ModItems;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
@@ -17,23 +22,37 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Terrafied.MOD_ID);
 
-    public static final RegistryObject<Block> BEDROCK = registryBlock("bedrock",
+    public static final RegistryObject<Block> BEDROCK = registryFireproofBlock("bedrock",
             () -> new TerrafiedBedrock(BlockBehaviour.Properties.of()
                     .strength(150.0F, 1200.0F)
                     .requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> BEDROCK_DIAMOND_ORE = registryBlock("bedrock_diamond_ore",
+    public static final RegistryObject<Block> BEDROCK_DIAMOND_ORE = registryFireproofBlock("bedrock_diamond_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
-                    .strength(100.0F, 1200.0F), UniformInt.of(4, 8)));
+                    .strength(100.0F, 1200.0F), UniformInt.of(4, 8)) {
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    pTooltip.add(Component.translatable("block.terrafied.bedrock_diamond_ore.desc").withStyle(ChatFormatting.GRAY));
+                    super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
+                }
+            });
     public static final RegistryObject<Block> BEDROCK_ANCIENT_DEBRIS = registryFireproofBlock("bedrock_ancient_debris",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
-                    .strength(100.0F, 1200.0F), UniformInt.of(6, 10)));
+                    .strength(100.0F, 1200.0F), UniformInt.of(6, 10)) {
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    pTooltip.add(Component.translatable("block.terrafied.bedrock_ancient_debris.desc").withStyle(ChatFormatting.GRAY));
+                    super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
+                }
+            });
 
     public static final RegistryObject<Block> REFINED_BEDROCK = registryFireproofBlock("refined_bedrock",
             () -> new Block(BlockBehaviour.Properties.of()

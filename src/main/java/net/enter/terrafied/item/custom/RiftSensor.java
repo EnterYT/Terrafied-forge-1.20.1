@@ -1,6 +1,7 @@
 package net.enter.terrafied.item.custom;
 
 import net.enter.terrafied.block.ModBlocks;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -49,9 +50,9 @@ public class RiftSensor extends Item {
             }
 
             if (foundOre) {
-                player.sendSystemMessage(Component.literal("Tool pulls down to unknown force underneath in this chunk!"));
+                player.displayClientMessage(Component.literal("Tool pulls down to unknown force underneath in this chunk!").withStyle(ChatFormatting.GREEN), true);
             } else {
-                player.sendSystemMessage(Component.literal("No response."));
+                player.displayClientMessage(Component.literal("No response.").withStyle(ChatFormatting.GRAY), true);
             }
         }
 
@@ -72,7 +73,7 @@ public class RiftSensor extends Item {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.terrafied.rift_sensor"));
+        pTooltipComponents.add(Component.translatable("item.terrafied.rift_sensor.tooltip").withStyle(ChatFormatting.DARK_GREEN));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 }

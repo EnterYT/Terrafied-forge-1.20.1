@@ -13,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Terrafied.MOD_ID);
 
     public static final RegistryObject<Item> BEDROCK_SHARD = ITEMS.register("bedrock_shard",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().fireResistant()));
             // The basic of Terrafied
 
     public static final RegistryObject<Item> BEDROCK_METAL_INGOT = ITEMS.register("bedrock_metal_ingot",

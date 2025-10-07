@@ -1,5 +1,6 @@
 package net.enter.terrafied.block.custom;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -35,7 +36,7 @@ public class TerrafiedBedrock extends Block {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-        pTooltip.add(Component.translatable("tooltip.terrafied.bedrock"));
+        pTooltip.add(Component.translatable("block.terrafied.bedrock.desc").withStyle(ChatFormatting.GRAY));
         super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
     }
 }

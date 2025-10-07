@@ -1,24 +1,29 @@
 {
   "item.terrafied.bedrock_shard": "Bedrock Shard",
+  "item.terrafied.bedrock_shard.desc": "Acquired from breaking Bedrock",
   "item.terrafied.bedrock_metal_ingot": "Bedrock Metal Ingot",
   "item.terrafied.bedrock_metal_nugget": "Bedrock Metal Nugget",
   "item.terrafied.bedrock_upgrade_smiting_template": "Bedrock Upgrade Smiting Template",
 
   "block.terrafied.bedrock": "Bedrock",
+  "block.terrafied.bedrock.desc": "Fragile version of classic bedrock",
   "block.terrafied.refined_bedrock": "Refined Bedrock",
   "block.terrafied.bedrock_metal_block": "Bedrock Metal Block",
   "block.terrafied.bedrock_diamond_ore": "Bedrock Diamond Ore",
+  "block.terrafied.bedrock_diamond_ore.desc": "Generated on lower bedrock layer in Overworld",
   "block.terrafied.bedrock_ancient_debris": "Bedrock Ancient Debris",
+  "block.terrafied.bedrock_ancient_debris.desc": "Generated on top bedrock layer in Nether",
   "block.terrafied.cracked_bedrock": "Cracked Bedrock",
-
+  "block.terrafied.cracked_bedrock.desc": "Generates on among other bedrock blocks",
 
   "block.terrafied.thermal_shock_blaster": "Thermal Shock Blaster",
+  "block.terrafied.thermal_shock_blaster.desc": "Crushes materials by force of thermal shock",
 
   "item.terrafied.rift_sensor": "Rift Sensor",
 
-  "tooltip.terrafied.cracked_bedrock": "Generates on among other bedrock blocks",
-  "tooltip.terrafied.bedrock": "Fragile version of classic bedrock",
-  "tooltip.terrafied.rift_sensor": "Scans current chunk for rifts on bedrock level",
+
+
+  "item.terrafied.rift_sensor.tooltip": "Scans current chunk for rifts on bedrock level",
 
   "creativetab:terrafied_tab": "Terrafied Tab"
 }
