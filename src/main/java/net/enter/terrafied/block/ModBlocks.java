@@ -31,11 +31,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Terrafied.MOD_ID);
 
-    public static final RegistryObject<Block> BEDROCK = registryFireproofBlock("bedrock",
+    public static final RegistryObject<Block> BEDROCK = registryBlock("bedrock",
             () -> new TerrafiedBedrock(BlockBehaviour.Properties.of()
                     .strength(150.0F, 1200.0F)
                     .requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> BEDROCK_DIAMOND_ORE = registryFireproofBlock("bedrock_diamond_ore",
+    public static final RegistryObject<Block> BEDROCK_DIAMOND_ORE = registryBlock("bedrock_diamond_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
                     .strength(100.0F, 1200.0F), UniformInt.of(4, 8)) {
                 @Override

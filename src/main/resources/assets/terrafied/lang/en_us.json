@@ -20,7 +20,9 @@
   "block.terrafied.thermal_shock_blaster.desc": "Crushes materials by force of thermal shock",
 
   "item.terrafied.rift_sensor": "Rift Sensor",
-
+  "item.terrafied.tinted_glass_bottle": "Tinted Glass Bottle",
+  "item.terrafied.nyx_essence_glass_bottle" : "Nyx Essence Glass Bottle",
+  "item.terrafied.nyx_essence_tinted_glass_bottle" : "Nyx Essence Tinted Glass Bottle",
 
 
   "item.terrafied.rift_sensor.tooltip": "Scans current chunk for rifts on bedrock level",

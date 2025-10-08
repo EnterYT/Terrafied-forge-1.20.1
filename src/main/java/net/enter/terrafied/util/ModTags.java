@@ -21,11 +21,11 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> CONSUMED_BY_ABYSS = tag("consumed_by_abyss");
-        public static final TagKey<Item> WEAK_AGAINST_ABYSS = tag("weak_against_abyss");
-        public static final TagKey<Item> DURABLE_FOR_ABYSS = tag("durable_for_abyss");
-        public static final TagKey<Item> RESISTANT_TO_ABYSS = tag("resistant_to_abyss");
-
+        public static final TagKey<Item> CONSUMED_BY_NYX = tag("consumed_by_nyx");
+        public static final TagKey<Item> WEAK_AGAINST_NYX = tag("weak_against_nyx");
+        public static final TagKey<Item> DURABLE_FOR_NYX = tag("durable_for_nyx");
+        public static final TagKey<Item> RESISTANT_TO_NYX = tag("resistant_to_nyx");
+        public static final TagKey<Item> NYX_ESSENCE = tag("nyx_essence");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(

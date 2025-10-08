@@ -13,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Terrafied.MOD_ID);
 
     public static final RegistryObject<Item> BEDROCK_SHARD = ITEMS.register("bedrock_shard",
-            () -> new Item(new Item.Properties().fireResistant()));
+            () -> new Item(new Item.Properties()));
             // The basic of Terrafied
 
     public static final RegistryObject<Item> BEDROCK_METAL_INGOT = ITEMS.register("bedrock_metal_ingot",
@@ -24,11 +24,8 @@ public class ModItems {
     public static final RegistryObject<Item> BEDROCK_UPGRADE_SMITING_TEMPLATE = ITEMS.register("bedrock_upgrade_smiting_template",
             () -> new Item(new Item.Properties().fireResistant()));
 
-    public static final RegistryObject<Item> BEDROCK_PLATE = ITEMS.register("bedrock_plate",
-            () -> new Item(new Item.Properties()));
-            // Can be used as cover for upgraded versions of mechanisms
 
-    public static final RegistryObject<Item> BEDROCK_CIRCUIT = ITEMS.register("bedrock_circuit",
+    public static final RegistryObject<Item> TINTED_GLASS_BOTTLE = ITEMS.register("tinted_glass_bottle",
             () -> new Item(new Item.Properties()));
             // Item for upgrading mechanisms to their
 
