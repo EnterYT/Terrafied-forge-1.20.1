@@ -30,7 +30,7 @@ public class ModTags {
         public static final TagKey<Item> NYX_ESSENCE = tag("nyx_essence");
 
         public static final TagKey<Item> NETHERITE_TOOL_MATERIALS = tag("netherite_tool_materials");
-        public static final TagKey<Item> NEED_BEDROCK_TOOL = tag("need_bedrock_tool");
+        public static final TagKey<Item> BEDROCK_TOOL_MATERIALS = tag("bedrock_tool_materials");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(

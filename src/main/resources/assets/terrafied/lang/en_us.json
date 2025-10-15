@@ -14,7 +14,7 @@
   "block.terrafied.bedrock_ancient_debris": "Bedrock Ancient Debris",
   "block.terrafied.bedrock_ancient_debris.desc": "Generated on top bedrock layer in Nether",
   "block.terrafied.cracked_bedrock": "Cracked Bedrock",
-  "block.terrafied.cracked_bedrock.desc": "Generates on among other bedrock blocks",
+  "block.terrafied.cracked_bedrock.desc": "Generates among other bedrock blocks",
 
   "block.terrafied.thermal_shock_blaster": "Thermal Shock Blaster",
   "block.terrafied.thermal_shock_blaster.desc": "Crushes materials by force of thermal shock",

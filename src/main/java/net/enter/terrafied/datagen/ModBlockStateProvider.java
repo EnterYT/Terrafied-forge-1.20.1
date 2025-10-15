@@ -51,8 +51,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         blockRegistryObject.getId().getPath(),
                         ResourceLocation.fromNamespaceAndPath(Terrafied.MOD_ID, "block/" + textureName + "_side"),
                         ResourceLocation.fromNamespaceAndPath(Terrafied.MOD_ID, "block/" + textureName + "_front"),
-                        ResourceLocation.fromNamespaceAndPath(Terrafied.MOD_ID, "block/" + textureName + "_top"),
-                        ResourceLocation.fromNamespaceAndPath(Terrafied.MOD_ID, "block/" + textureName + "_bottom")
+                        ResourceLocation.fromNamespaceAndPath(Terrafied.MOD_ID, "block/" + textureName + "_bottom"),
+                        ResourceLocation.fromNamespaceAndPath(Terrafied.MOD_ID, "block/" + textureName + "_top")
                 )
         );
     }

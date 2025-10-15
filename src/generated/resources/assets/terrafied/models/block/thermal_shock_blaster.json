@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:block/orientable_with_bottom",
   "textures": {
-    "bottom": "terrafied:block/thermal_shock_blaster_top",
+    "bottom": "terrafied:block/thermal_shock_blaster_bottom",
     "front": "terrafied:block/thermal_shock_blaster_front",
     "side": "terrafied:block/thermal_shock_blaster_side",
-    "top": "terrafied:block/thermal_shock_blaster_bottom"
+    "top": "terrafied:block/thermal_shock_blaster_top"
   }
 }

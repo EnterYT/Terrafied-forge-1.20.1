@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-15T18:08:12.6254333	Block States: terrafied
+// 1.20.1	2025-10-15T18:41:42.0321261	Block States: terrafied
 4b0ba746c070fe3c18b89a76efb354aa7752e516 assets/terrafied/blockstates/bedrock.json
 4d2c0ac8965f4c5a70b85b0ba79d60084ce778d2 assets/terrafied/blockstates/bedrock_ancient_debris.json
 5f9b6ef7ffff42deddb155fc2f06709c08a56d79 assets/terrafied/blockstates/bedrock_diamond_ore.json
@@ -12,7 +12,7 @@
 4d06ac92d4ef1872d8475363a61f79e001de575f assets/terrafied/models/block/bedrock_metal_block.json
 8c4287465fa02b4b093629ea4e1f8ede4f8c603d assets/terrafied/models/block/cracked_bedrock.json
 b7972673f8d3a21581e63a95d4787bbb4b6acb30 assets/terrafied/models/block/refined_bedrock.json
-4895cae3d1bdd9fbaca108249a14eaf99ee93458 assets/terrafied/models/block/thermal_shock_blaster.json
+e0514b56e9c704f9c1cc3f2b6b9e84b68de7cfd5 assets/terrafied/models/block/thermal_shock_blaster.json
 cdce23fa307b3f23a1add58884ace506a94f3de1 assets/terrafied/models/item/bedrock.json
 49b809b827334e0e81ebb4ea6887df86513ab3a2 assets/terrafied/models/item/bedrock_ancient_debris.json
 d38a21922ba13ffe019be63431747d7a44966f93 assets/terrafied/models/item/bedrock_diamond_ore.json

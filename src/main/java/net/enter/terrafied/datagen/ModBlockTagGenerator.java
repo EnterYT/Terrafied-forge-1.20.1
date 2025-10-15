@@ -34,6 +34,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.THERMAL_SHOCK_BLASTER.get())
                 .add(ModBlocks.BEDROCK.get())
         ;
+        this.tag(BlockTags.MINEABLE_WITH_AXE);
+
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL);
+
+        this.tag(BlockTags.MINEABLE_WITH_HOE);
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.BEDROCK.get())
