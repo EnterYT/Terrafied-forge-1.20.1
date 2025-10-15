@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "terrafied:block/bedrock_diamond_ore",
-    "particle": "minecraft:block/bedrock"
-  }
-}

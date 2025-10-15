@@ -21,11 +21,16 @@ public class ModTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> TERRAFIED_ORES = tag("terrafied_ores");
+
         public static final TagKey<Item> CONSUMED_BY_NYX = tag("consumed_by_nyx");
         public static final TagKey<Item> WEAK_AGAINST_NYX = tag("weak_against_nyx");
         public static final TagKey<Item> DURABLE_FOR_NYX = tag("durable_for_nyx");
         public static final TagKey<Item> RESISTANT_TO_NYX = tag("resistant_to_nyx");
         public static final TagKey<Item> NYX_ESSENCE = tag("nyx_essence");
+
+        public static final TagKey<Item> NETHERITE_TOOL_MATERIALS = tag("netherite_tool_materials");
+        public static final TagKey<Item> NEED_BEDROCK_TOOL = tag("need_bedrock_tool");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(

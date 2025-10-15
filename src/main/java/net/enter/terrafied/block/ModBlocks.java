@@ -82,10 +82,12 @@ public class ModBlocks {
                     .mapColor(MapColor.COLOR_BLACK)
                     .requiresCorrectToolForDrops()
                     .lightLevel(state -> 4)
+                    .noLootTable()
             ));
 
     public static final RegistryObject<Block> HIGH_PRESSURE_CUTTER = registryBlock("high_pressure_cutter",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PISTON)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PISTON)
+                    .noLootTable()));
             // Uses water on high pressure to cut materials.
             // Base of piston, requires water to function, can be refilled by clicking on the block with water container
             // Used for creation of circuits.
