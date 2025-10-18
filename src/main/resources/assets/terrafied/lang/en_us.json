@@ -5,8 +5,8 @@
   "item.terrafied.bedrock_metal_nugget": "Bedrock Metal Nugget",
   "item.terrafied.bedrock_upgrade_smiting_template": "Bedrock Upgrade Smiting Template",
 
-  "block.terrafied.bedrock": "Bedrock",
-  "block.terrafied.bedrock.desc": "Fragile version of classic bedrock",
+  "block.terrafied.bedrock": "Destructured Bedrock",
+  "block.terrafied.bedrock.desc": "Fragile type of bedrock",
   "block.terrafied.refined_bedrock": "Refined Bedrock",
   "block.terrafied.bedrock_metal_block": "Bedrock Metal Block",
   "block.terrafied.bedrock_diamond_ore": "Bedrock Diamond Ore",
