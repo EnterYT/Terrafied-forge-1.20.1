@@ -34,7 +34,16 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.BEDROCK_METAL_BLOCK.get());
                         pOutput.accept(ModItems.BEDROCK_UPGRADE_SMITING_TEMPLATE.get());
 
+                        pOutput.accept(ModItems.TINTED_GLASS_BOTTLE.get());
+                        pOutput.accept(ModItems.NYX_ESSENCE_GLASS_BOTTLE.get());
+                        pOutput.accept(ModItems.NYX_ESSENCE_TINTED_GLASS_BOTTLE.get());
                         pOutput.accept(ModItems.RIFT_SENSOR.get());
+
+                        pOutput.accept(ModItems.BEDROCK_METAL_SWORD.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_PICKAXE.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_AXE.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_SHOVEL.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_HOE.get());
 
                         pOutput.accept(ModBlocks.THERMAL_SHOCK_BLASTER.get());
                     })

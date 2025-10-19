@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "M": {
+      "item": "terrafied:bedrock_metal_ingot"
+    }
+  },
+  "pattern": [
+    "MM",
+    " B",
+    " B"
+  ],
+  "result": {
+    "item": "terrafied:bedrock_metal_hoe"
+  },
+  "show_notification": true
+}

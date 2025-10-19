@@ -2,6 +2,7 @@ package net.enter.terrafied.datagen;
 
 import net.enter.terrafied.Terrafied;
 import net.enter.terrafied.block.ModBlocks;
+import net.enter.terrafied.item.ModItems;
 import net.enter.terrafied.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -48,6 +49,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.BEDROCK_ANCIENT_DEBRIS.get())
                 .add(ModBlocks.BEDROCK_METAL_BLOCK.get())
                 .add(ModBlocks.THERMAL_SHOCK_BLASTER.get())
+        ;
+
+        this.tag(ModTags.Blocks.NEEDS_BEDROCK_TOOLS)
+
         ;
     }
 }

@@ -19,6 +19,12 @@
   "block.terrafied.thermal_shock_blaster": "Thermal Shock Blaster",
   "block.terrafied.thermal_shock_blaster.desc": "Crushes materials by force of thermal shock",
 
+  "item.terrafied.bedrock_metal_sword": "Bedrock Metal Sword",
+  "item.terrafied.bedrock_metal_pickaxe": "Bedrock Metal Pickaxe",
+  "item.terrafied.bedrock_metal_axe": "Bedrock Metal Axe",
+  "item.terrafied.bedrock_metal_shovel": "Bedrock Metal Shovel",
+  "item.terrafied.bedrock_metal_hoe": "Bedrock Metal Hoe",
+
   "item.terrafied.rift_sensor": "Rift Sensor",
   "item.terrafied.tinted_glass_bottle": "Tinted Glass Bottle",
   "item.terrafied.nyx_essence_glass_bottle" : "Nyx Essence Glass Bottle",

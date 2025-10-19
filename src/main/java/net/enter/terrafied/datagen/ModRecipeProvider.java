@@ -5,6 +5,7 @@ import net.enter.terrafied.block.ModBlocks;
 import net.enter.terrafied.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
@@ -76,6 +77,69 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', Items.BLAZE_ROD)
                 .unlockedBy("has_amethyst", has(Items.AMETHYST_SHARD))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BEDROCK_METAL_SWORD.get())
+                .pattern("M")
+                .pattern("M")
+                .pattern("B")
+                .define('M', ModItems.BEDROCK_METAL_INGOT.get())
+                .define('B', Items.BLAZE_ROD)
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BEDROCK_METAL_PICKAXE.get())
+                .pattern("MMM")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('M', ModItems.BEDROCK_METAL_INGOT.get())
+                .define('B', Items.BLAZE_ROD)
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BEDROCK_METAL_AXE.get())
+                .pattern("MM")
+                .pattern("MB")
+                .pattern(" B")
+                .define('M', ModItems.BEDROCK_METAL_INGOT.get())
+                .define('B', Items.BLAZE_ROD)
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BEDROCK_METAL_AXE.get())
+                .pattern("MM")
+                .pattern("BM")
+                .pattern("B ")
+                .define('M', ModItems.BEDROCK_METAL_INGOT.get())
+                .define('B', Items.BLAZE_ROD)
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter, new ResourceLocation(Terrafied.MOD_ID, "bedrock_metal_axe_mirrored"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BEDROCK_METAL_SHOVEL.get())
+                .pattern("M")
+                .pattern("B")
+                .pattern("B")
+                .define('M', ModItems.BEDROCK_METAL_INGOT.get())
+                .define('B', Items.BLAZE_ROD)
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BEDROCK_METAL_HOE.get())
+                .pattern("MM")
+                .pattern("B ")
+                .pattern("B ")
+                .define('M', ModItems.BEDROCK_METAL_INGOT.get())
+                .define('B', Items.BLAZE_ROD)
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.BEDROCK_METAL_HOE.get())
+                .pattern("MM")
+                .pattern(" B")
+                .pattern(" B")
+                .define('M', ModItems.BEDROCK_METAL_INGOT.get())
+                .define('B', Items.BLAZE_ROD)
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter, new ResourceLocation(Terrafied.MOD_ID, "bedrock_metal_hoe_mirrored"));
     }
 
 
@@ -97,6 +161,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(input), has(input))
                 .save(consumer);
     }
+
 
     protected static void nineBlockStorageRecipes(Consumer<FinishedRecipe> consumer,
                                                   RecipeCategory smallCategory, ItemLike smallItem,

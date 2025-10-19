@@ -22,6 +22,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BEDROCK_METAL_INGOT);
         simpleItem(ModItems.BEDROCK_METAL_NUGGET);
 
+        handheldItem(ModItems.BEDROCK_METAL_SWORD);
+        handheldItem(ModItems.BEDROCK_METAL_PICKAXE);
+        handheldItem(ModItems.BEDROCK_METAL_AXE);
+        handheldItem(ModItems.BEDROCK_METAL_SHOVEL);
+        handheldItem(ModItems.BEDROCK_METAL_HOE);
+
         simpleItem(ModItems.RIFT_SENSOR);
     }
 

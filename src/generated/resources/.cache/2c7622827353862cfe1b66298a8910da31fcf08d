@@ -1,7 +1,8 @@
-// 1.20.1	2025-10-15T18:29:45.5756647	Tags for minecraft:block mod id terrafied
+// 1.20.1	2025-10-20T03:00:55.0471015	Tags for minecraft:block mod id terrafied
 5728927a54760966d8e6f54c8d6d486fa34150f6 data/forge/tags/blocks/needs_netherite_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
 e62b710455816e0018a233b54fe2f22601c165c7 data/minecraft/tags/blocks/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/terrafied/tags/blocks/needs_bedrock_tool.json
 a32c58ad5e37997c9c3836ff8c72cf8f7b7c12d1 data/terrafied/tags/blocks/terrafied_ores.json
