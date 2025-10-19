@@ -3,7 +3,7 @@
   "item.terrafied.bedrock_shard.desc": "Acquired from breaking Bedrock",
   "item.terrafied.bedrock_metal_ingot": "Bedrock Metal Ingot",
   "item.terrafied.bedrock_metal_nugget": "Bedrock Metal Nugget",
-  "item.terrafied.bedrock_upgrade_smiting_template": "Bedrock Upgrade Smiting Template",
+  "item.terrafied.bedrock_upgrade_smithing_template": "Bedrock Upgrade Smithing Template",
 
   "block.terrafied.bedrock": "Destructured Bedrock",
   "block.terrafied.bedrock.desc": "Fragile type of bedrock",

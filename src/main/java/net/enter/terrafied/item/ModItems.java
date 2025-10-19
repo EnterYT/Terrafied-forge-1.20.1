@@ -22,7 +22,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> BEDROCK_METAL_NUGGET = ITEMS.register("bedrock_metal_nugget",
             () -> new Item(new Item.Properties().fireResistant()));
-    public static final RegistryObject<Item> BEDROCK_UPGRADE_SMITING_TEMPLATE = ITEMS.register("bedrock_upgrade_smiting_template",
+    public static final RegistryObject<Item> BEDROCK_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("bedrock_upgrade_smithing_template",
             () -> new Item(new Item.Properties().fireResistant()));
 
 

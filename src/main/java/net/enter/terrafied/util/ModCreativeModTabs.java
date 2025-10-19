@@ -7,12 +7,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.awt.*;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -32,7 +29,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.BEDROCK_METAL_NUGGET.get());
                         pOutput.accept(ModItems.BEDROCK_METAL_INGOT.get());
                         pOutput.accept(ModBlocks.BEDROCK_METAL_BLOCK.get());
-                        pOutput.accept(ModItems.BEDROCK_UPGRADE_SMITING_TEMPLATE.get());
+                        pOutput.accept(ModItems.BEDROCK_UPGRADE_SMITHING_TEMPLATE.get());
 
                         pOutput.accept(ModItems.TINTED_GLASS_BOTTLE.get());
                         pOutput.accept(ModItems.NYX_ESSENCE_GLASS_BOTTLE.get());
