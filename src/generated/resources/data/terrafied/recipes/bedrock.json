@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "terrafied:bedrock_shard"
+    },
+    {
+      "item": "terrafied:bedrock_shard"
+    },
+    {
+      "item": "terrafied:bedrock_shard"
+    },
+    {
+      "item": "terrafied:bedrock_shard"
+    },
+    {
+      "item": "terrafied:bedrock_shard"
+    },
+    {
+      "item": "terrafied:bedrock_shard"
+    },
+    {
+      "item": "terrafied:bedrock_shard"
+    },
+    {
+      "item": "terrafied:bedrock_shard"
+    },
+    {
+      "item": "terrafied:bedrock_shard"
+    }
+  ],
+  "result": {
+    "item": "terrafied:bedrock"
+  }
+}

@@ -1,10 +1,17 @@
 package net.enter.terrafied.block;
 
 import net.enter.terrafied.Terrafied;
+import net.enter.terrafied.block.custom.CrackedBedrock;
+import net.enter.terrafied.block.custom.TerrafiedBedrock;
 import net.enter.terrafied.item.ModItems;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
@@ -15,21 +22,39 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Terrafied.MOD_ID);
 
+    public static final RegistryObject<Block> BEDROCK = registryBlock("bedrock",
+            () -> new TerrafiedBedrock(BlockBehaviour.Properties.of()
+                    .strength(150.0F, 1200.0F)
+                    .requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> BEDROCK_DIAMOND_ORE = registryBlock("bedrock_diamond_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
-                    .strength(100.0F, 1200.0F), UniformInt.of(4, 8)));
-    public static final RegistryObject<Block> BEDROCK_ANCIENT_DEBRIS = registryBlock("bedrock_ancient_debris",
+                    .strength(100.0F, 1200.0F), UniformInt.of(4, 8)) {
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    pTooltip.add(Component.translatable("block.terrafied.bedrock_diamond_ore.desc").withStyle(ChatFormatting.GRAY));
+                    super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
+                }
+            });
+    public static final RegistryObject<Block> BEDROCK_ANCIENT_DEBRIS = registryFireproofBlock("bedrock_ancient_debris",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
-                    .strength(100.0F, 1200.0F), UniformInt.of(6, 10)));
+                    .strength(100.0F, 1200.0F), UniformInt.of(6, 10)) {
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    pTooltip.add(Component.translatable("block.terrafied.bedrock_ancient_debris.desc").withStyle(ChatFormatting.GRAY));
+                    super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
+                }
+            });
 
-    public static final RegistryObject<Block> REFINED_BEDROCK  = registryBlock("refined_bedrock",
+    public static final RegistryObject<Block> REFINED_BEDROCK = registryFireproofBlock("refined_bedrock",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(100.0F, 1200.0F)
                     .mapColor(MapColor.COLOR_BLACK)
@@ -37,7 +62,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             ));
 
-    public static final RegistryObject<Block> BEDROCK_METAL_BLOCK = registryBlock("bedrock_metal_block",
+    public static final RegistryObject<Block> BEDROCK_METAL_BLOCK = registryFireproofBlock("bedrock_metal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
 
     public static final RegistryObject<Block> THERMAL_SHOCK_BLASTER = registryBlock("thermal_shock_blaster",
@@ -49,16 +74,20 @@ public class ModBlocks {
             ));
             // Uses unique resistance of netherite against extreme temperatures to cause thermal shock of the bedrock
             // Base of netherite block, has interface, requires constant refill of consumables (Any cold block and Any fuel)
-            // First machine to mine bedrock. Gets Bedrock Shard from breaking bedrock.
+            // Basically, the crusher of the mod. Can also crush bedrock.
 
-    public static final RegistryObject<Block> HIGH_ACCURACY_PULSAR = registryBlock("high_accuracy_pulsar",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
-            // Uses sonar scanning to find weak spots of bedrock, then punches there
-            // Base of netherite block, has interface, requires energy to function.
-            // Next step technology of mining bedrock. Gets Bedrock Shard from breaking bedrock.
+    public static final RegistryObject<Block> CRACKED_BEDROCK = registryBlock("cracked_bedrock",
+            () -> new CrackedBedrock(BlockBehaviour.Properties.of()
+                    .strength(100.0F, 1200.F)
+                    .mapColor(MapColor.COLOR_BLACK)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(state -> 4)
+                    .noLootTable()
+            ));
 
     public static final RegistryObject<Block> HIGH_PRESSURE_CUTTER = registryBlock("high_pressure_cutter",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PISTON)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PISTON)
+                    .noLootTable()));
             // Uses water on high pressure to cut materials.
             // Base of piston, requires water to function, can be refilled by clicking on the block with water container
             // Used for creation of circuits.
@@ -68,9 +97,19 @@ public class ModBlocks {
         registerBlockItem(name, toReturn);
         return toReturn;
     }
+    private static <T extends Block> RegistryObject<T> registryFireproofBlock(String name, Supplier<T> block){
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerFireproofBlockItem(name, toReturn);
+        return toReturn;
+    }
 
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
          return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    private static <T extends Block> RegistryObject<Item> registerFireproofBlockItem(String name, RegistryObject<T> block) {
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+                new Item.Properties().fireResistant()));
     }
 
     public static void register(IEventBus eventBus){

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "terrafied:bedrock"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "BNB",
+    "NNN",
+    "BNB"
+  ],
+  "result": {
+    "item": "terrafied:refined_bedrock"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,11 @@
+{
+  "values": [
+    "terrafied:bedrock",
+    "terrafied:cracked_bedrock",
+    "terrafied:refined_bedrock",
+    "terrafied:bedrock_diamond_ore",
+    "terrafied:bedrock_ancient_debris",
+    "terrafied:bedrock_metal_block",
+    "terrafied:thermal_shock_blaster"
+  ]
+}

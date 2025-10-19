@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bedrock": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrafied:bedrock"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "terrafied:refined_bedrock_from_bedrock_and_netherite_scrap"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bedrock",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "terrafied:refined_bedrock_from_bedrock_and_netherite_scrap"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bedrock_metal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "terrafied:bedrock_metal_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "terrafied:bedrock_metal_axe_mirrored"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bedrock_metal",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "terrafied:bedrock_metal_axe_mirrored"
+    ]
+  },
+  "sends_telemetry_event": false
+}

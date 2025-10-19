@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "bedrock_ore",
+  "ingredient": {
+    "item": "terrafied:bedrock_diamond_ore"
+  },
+  "result": "minecraft:diamond"
+}

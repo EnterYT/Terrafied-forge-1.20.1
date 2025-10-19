@@ -2,9 +2,8 @@ package net.enter.terrafied;
 
 import com.mojang.logging.LogUtils;
 import net.enter.terrafied.block.ModBlocks;
-import net.enter.terrafied.item.ModCreativeModTabs;
+import net.enter.terrafied.util.ModCreativeModTabs;
 import net.enter.terrafied.item.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,6 +15,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import org.spongepowered.asm.launch.MixinBootstrap;
+import org.spongepowered.asm.mixin.Mixins;
+
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Terrafied.MOD_ID)

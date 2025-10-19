@@ -23,3 +23,5 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+/src/main/resources/data/terrafied/recipes/handmade/
+/src/generated/resources/.cache/
