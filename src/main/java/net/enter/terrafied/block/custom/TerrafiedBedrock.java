@@ -30,6 +30,7 @@ public class TerrafiedBedrock extends Block {
             double y = pPos.getY() + 1.0 + (pRandom.nextDouble() * 2.0);
             double z = pPos.getZ() + 0.5 + (pRandom.nextDouble() - 0.5);
 
+            pLevel.addParticle(ParticleTypes.ASH, x, y - 2, z, 0, 0.5, 0);
             pLevel.addParticle(ParticleTypes.MYCELIUM, x, y, z, 0, 0.5, 0);
         }
     }

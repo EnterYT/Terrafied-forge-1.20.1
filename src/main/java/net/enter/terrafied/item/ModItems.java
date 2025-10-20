@@ -42,15 +42,19 @@ public class ModItems {
             () -> new RiftSensor(new Item.Properties().durability(100)));
 
     public static final RegistryObject<Item> BEDROCK_METAL_SWORD = ITEMS.register("bedrock_metal_sword",
-            () -> new SwordItem(ModToolTiers.BEDROCK, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.BEDROCK, 3, -2.4f, new Item.Properties()));
+
     public static final RegistryObject<Item> BEDROCK_METAL_PICKAXE = ITEMS.register("bedrock_metal_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.BEDROCK, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.BEDROCK, 1, -2.8f, new Item.Properties()));
+
     public static final RegistryObject<Item> BEDROCK_METAL_AXE = ITEMS.register("bedrock_metal_axe",
-            () -> new AxeItem(ModToolTiers.BEDROCK, 4, 2, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.BEDROCK, 6, -3.0f, new Item.Properties()));
+
     public static final RegistryObject<Item> BEDROCK_METAL_SHOVEL = ITEMS.register("bedrock_metal_shovel",
-            () -> new ShovelItem(ModToolTiers.BEDROCK, 4, 2, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.BEDROCK, 1, -3.0f, new Item.Properties()));
+
     public static final RegistryObject<Item> BEDROCK_METAL_HOE = ITEMS.register("bedrock_metal_hoe",
-            () -> new HoeItem(ModToolTiers.BEDROCK, 4, 2, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.BEDROCK, -2, 0, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){

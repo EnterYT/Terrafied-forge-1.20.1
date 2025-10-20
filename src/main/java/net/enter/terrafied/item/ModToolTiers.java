@@ -15,9 +15,9 @@ public class ModToolTiers {
     public static final Tier BEDROCK = TierSortingRegistry.registerTier(
             new ForgeTier(
                     7,
-                    3000,
-                    5f,
-                    4f,
+                    4818,
+                    15f,
+                    8f,
                     25,
                     ModTags.Blocks.NEEDS_BEDROCK_TOOLS, () -> Ingredient.of(ModItems.BEDROCK_METAL_INGOT.get())),
             new ResourceLocation(Terrafied.MOD_ID, "bedrock"), List.of(Tiers.NETHERITE), List.of()
