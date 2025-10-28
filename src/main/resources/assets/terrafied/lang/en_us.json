@@ -25,12 +25,16 @@
   "item.terrafied.bedrock_metal_shovel": "Bedrock Metal Shovel",
   "item.terrafied.bedrock_metal_hoe": "Bedrock Metal Hoe",
 
-  "item.terrafied.rift_sensor": "Rift Sensor",
+  "item.terrafied.bedrock_metal_helmet": "Bedrock Metal Helmet",
+  "item.terrafied.bedrock_metal_chestplate": "Bedrock Metal Chestplate",
+  "item.terrafied.bedrock_metal_leggings": "Bedrock Metal Leggings",
+  "item.terrafied.bedrock_metal_boots": "Bedrock Metal Boots",
+
   "item.terrafied.tinted_glass_bottle": "Tinted Glass Bottle",
   "item.terrafied.nyx_essence_glass_bottle" : "Nyx Essence Glass Bottle",
   "item.terrafied.nyx_essence_tinted_glass_bottle" : "Nyx Essence Tinted Glass Bottle",
 
-
+  "item.terrafied.rift_sensor": "Rift Sensor",
   "item.terrafied.rift_sensor.tooltip": "Scans current chunk for rifts on bedrock level",
 
   "creativetab:terrafied_tab": "Terrafied Tab"

@@ -17,7 +17,7 @@ public class ModToolTiers {
                     7,
                     4818,
                     15f,
-                    8f,
+                    12f,
                     25,
                     ModTags.Blocks.NEEDS_BEDROCK_TOOLS, () -> Ingredient.of(ModItems.BEDROCK_METAL_INGOT.get())),
             new ResourceLocation(Terrafied.MOD_ID, "bedrock"), List.of(Tiers.NETHERITE), List.of()

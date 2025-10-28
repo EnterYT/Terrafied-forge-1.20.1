@@ -30,6 +30,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         tag(ModTags.Items.NETHERITE_TOOL_MATERIALS).add(Items.NETHERITE_INGOT);
         tag(ModTags.Items.BEDROCK_TOOL_MATERIALS).add(ModItems.BEDROCK_METAL_INGOT.get());
-
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.BEDROCK_METAL_HELMET.get(),
+                        ModItems.BEDROCK_METAL_CHESTPLATE.get(),
+                        ModItems.BEDROCK_METAL_LEGGINGS.get(),
+                        ModItems.BEDROCK_METAL_BOOTS.get());
     }
 }

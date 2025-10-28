@@ -42,6 +42,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.BEDROCK_METAL_SHOVEL.get());
                         pOutput.accept(ModItems.BEDROCK_METAL_HOE.get());
 
+                        pOutput.accept(ModItems.BEDROCK_METAL_HELMET.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_CHESTPLATE.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_LEGGINGS.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_BOOTS.get());
+
                         pOutput.accept(ModBlocks.THERMAL_SHOCK_BLASTER.get());
                     })
                     .build());

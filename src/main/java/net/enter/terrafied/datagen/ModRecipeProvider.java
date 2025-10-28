@@ -50,9 +50,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REFINED_BEDROCK.get())
-                .pattern("BNB")
                 .pattern("NNN")
-                .pattern("BNB")
+                .pattern("NBN")
+                .pattern("NNN")
                 .define('B', ModBlocks.BEDROCK.get())
                 .define('N', Items.NETHERITE_SCRAP)
                 .unlockedBy("has_bedrock", has(ModBlocks.BEDROCK.get()))
@@ -140,6 +140,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', Items.BLAZE_ROD)
                 .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
                 .save(pWriter, new ResourceLocation(Terrafied.MOD_ID, "bedrock_metal_hoe_mirrored"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BEDROCK_METAL_HELMET.get())
+                .pattern("BBB")
+                .pattern("B B")
+                .define('B', ModItems.BEDROCK_METAL_INGOT.get())
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter);
+        ;
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BEDROCK_METAL_CHESTPLATE.get())
+                .pattern("B B")
+                .pattern("BBB")
+                .pattern("BBB")
+                .define('B', ModItems.BEDROCK_METAL_INGOT.get())
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter);
+        ;
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BEDROCK_METAL_LEGGINGS.get())
+                .pattern("BBB")
+                .pattern("B B")
+                .pattern("B B")
+                .define('B', ModItems.BEDROCK_METAL_INGOT.get())
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter);
+        ;
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BEDROCK_METAL_BOOTS.get())
+                .pattern("B B")
+                .pattern("B B")
+                .define('B', ModItems.BEDROCK_METAL_INGOT.get())
+                .unlockedBy("has_bedrock_metal", has(ModItems.BEDROCK_METAL_INGOT.get()))
+                .save(pWriter);
+        ;
     }
 
 
