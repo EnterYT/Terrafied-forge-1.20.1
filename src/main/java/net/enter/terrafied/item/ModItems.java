@@ -1,6 +1,7 @@
 package net.enter.terrafied.item;
 
 import net.enter.terrafied.Terrafied;
+import net.enter.terrafied.item.custom.ModArmorItem;
 import net.enter.terrafied.item.custom.NyxEssenceGlassBottle;
 import net.enter.terrafied.item.custom.RiftSensor;
 import net.minecraft.world.item.*;
@@ -57,13 +58,13 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.BEDROCK, -2, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> BEDROCK_METAL_HELMET = ITEMS.register("bedrock_metal_helmet",
-            () -> new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> BEDROCK_METAL_CHESTPLATE = ITEMS.register("bedrock_metal_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> BEDROCK_METAL_LEGGINGS = ITEMS.register("bedrock_metal_leggings",
-            () -> new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> BEDROCK_METAL_BOOTS = ITEMS.register("bedrock_metal_boots",
-            () -> new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
 
 
     public static void register(IEventBus eventBus){
