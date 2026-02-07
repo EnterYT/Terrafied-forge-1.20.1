@@ -54,6 +54,38 @@ public class ModBlocks {
                 }
             });
 
+    public static final RegistryObject<Block> JADE_BLOCK = registryFireproofBlock("jade_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .strength(100.0F, 1200.0F)
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()
+            ));
+    public static final RegistryObject<Block> BUDDING_JADE = registryFireproofBlock("budding_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .strength(100.0F, 1200.0F)
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()
+                    .noLootTable()
+            ));
+
+    public static final RegistryObject<Block> SCHEELITE_BLOCK = registryFireproofBlock("scheelite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .strength(100.0F, 1200.0F)
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()
+            ));
+
+
+    public static final RegistryObject<Block> VOIDSTONE = registryBlock("voidstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(100.0F, 1200.0F)
+                    .mapColor(MapColor.TERRACOTTA_BLACK)
+                    .sound(SoundType.DEEPSLATE)
+                    .requiresCorrectToolForDrops()
+            ));
     public static final RegistryObject<Block> REFINED_BEDROCK = registryFireproofBlock("refined_bedrock",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(100.0F, 1200.0F)

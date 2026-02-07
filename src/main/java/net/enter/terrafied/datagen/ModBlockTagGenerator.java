@@ -49,6 +49,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.BEDROCK_ANCIENT_DEBRIS.get())
                 .add(ModBlocks.BEDROCK_METAL_BLOCK.get())
                 .add(ModBlocks.THERMAL_SHOCK_BLASTER.get())
+                .add(ModBlocks.VOIDSTONE.get())
+                .add(ModBlocks.JADE_BLOCK.get())
+                .add(ModBlocks.SCHEELITE_BLOCK.get())
         ;
 
         this.tag(ModTags.Blocks.NEEDS_BEDROCK_TOOLS)

@@ -23,6 +23,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.BEDROCK_DIAMOND_ORE);
         blockWithItem(ModBlocks.CRACKED_BEDROCK);
+        blockWithItem(ModBlocks.VOIDSTONE);
+        blockWithItem(ModBlocks.JADE_BLOCK);
+        blockWithItem(ModBlocks.SCHEELITE_BLOCK);
 
         blockWithItemOrientableWithBottom(ModBlocks.THERMAL_SHOCK_BLASTER, "thermal_shock_blaster");
 

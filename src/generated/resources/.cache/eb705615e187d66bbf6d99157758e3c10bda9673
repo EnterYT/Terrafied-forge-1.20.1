@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-28T17:32:14.4098315	Item Models: terrafied
+// 1.20.1	2026-02-08T00:26:16.6632766	Item Models: terrafied
 1893ba8b9e28e4b718d0e73b6704c853cf9a5f92 assets/terrafied/models/item/bedrock_metal_axe.json
 cfcc8d7c4ef682c470994b7e08393c0613ea7ed4 assets/terrafied/models/item/bedrock_metal_boots.json
 5bbfeb9feb295068813bdb925de9b38e2e4bf8ec assets/terrafied/models/item/bedrock_metal_boots_amethyst_trim.json
@@ -51,4 +51,6 @@ e12506be475505b5541b83ca09805b436b88532e assets/terrafied/models/item/bedrock_me
 7149effa2ee7dd016739d1f8ff8a32f5616f3164 assets/terrafied/models/item/bedrock_metal_shovel.json
 d7fcdfd9f3b2bf0da59df2c7bbbb5bbd0d285b12 assets/terrafied/models/item/bedrock_metal_sword.json
 502dbb7f3201d4adfdbeeb6a2623ccb09bbe6cd9 assets/terrafied/models/item/bedrock_shard.json
+c6bc232b8af29eea52bbcab13925a02386779e63 assets/terrafied/models/item/jade.json
 22087f5addcc983d453733d6770644cc7fe9bcdc assets/terrafied/models/item/rift_sensor.json
+80d28ed666027b786e2d4e7e0cfe5d12390d3b26 assets/terrafied/models/item/scheelite.json

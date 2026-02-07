@@ -41,6 +41,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BEDROCK_SHARD);
         simpleItem(ModItems.BEDROCK_METAL_INGOT);
         simpleItem(ModItems.BEDROCK_METAL_NUGGET);
+        simpleItem(ModItems.JADE);
+        simpleItem(ModItems.SCHEELITE);
 
         handheldItem(ModItems.BEDROCK_METAL_SWORD);
         handheldItem(ModItems.BEDROCK_METAL_PICKAXE);

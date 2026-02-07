@@ -42,6 +42,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ModItems.BEDROCK_METAL_NUGGET.get(), RecipeCategory.MISC,
                 ModItems.BEDROCK_METAL_INGOT.get());
 
+        nineBlockStorageRecipes(pWriter, RecipeCategory.MISC,
+                ModItems.JADE.get(), RecipeCategory.MISC,
+                ModBlocks.JADE_BLOCK.get());
+
+        nineBlockStorageRecipes(pWriter, RecipeCategory.MISC,
+                ModItems.SCHEELITE.get(), RecipeCategory.MISC,
+                ModBlocks.SCHEELITE_BLOCK.get());
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BEDROCK.get())
                 .requires(ModItems.BEDROCK_SHARD.get(), 9)

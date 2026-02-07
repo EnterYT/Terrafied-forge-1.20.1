@@ -48,6 +48,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.BEDROCK_ANCIENT_DEBRIS.get(),
                 createBedrockOreDrops(ModBlocks.BEDROCK_ANCIENT_DEBRIS.get(), Blocks.ANCIENT_DEBRIS.asItem()));
 
+        this.dropSelf(ModBlocks.VOIDSTONE.get());
+        this.dropSelf(ModBlocks.JADE_BLOCK.get());
+        this.dropSelf(ModBlocks.SCHEELITE_BLOCK.get());
     }
 
     @Override

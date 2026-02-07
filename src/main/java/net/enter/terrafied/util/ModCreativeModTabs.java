@@ -25,11 +25,18 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.BEDROCK_DIAMOND_ORE.get());
                         pOutput.accept(ModBlocks.BEDROCK_ANCIENT_DEBRIS.get());
 
+                        pOutput.accept(ModBlocks.VOIDSTONE.get());
+                        pOutput.accept(ModBlocks.JADE_BLOCK.get());
+                        pOutput.accept(ModBlocks.SCHEELITE_BLOCK.get());
+
                         pOutput.accept(ModItems.BEDROCK_SHARD.get());
                         pOutput.accept(ModItems.BEDROCK_METAL_NUGGET.get());
                         pOutput.accept(ModItems.BEDROCK_METAL_INGOT.get());
                         pOutput.accept(ModBlocks.BEDROCK_METAL_BLOCK.get());
                         pOutput.accept(ModItems.BEDROCK_UPGRADE_SMITHING_TEMPLATE.get());
+
+                        pOutput.accept(ModItems.JADE.get());
+                        pOutput.accept(ModItems.SCHEELITE.get());
 
                         pOutput.accept(ModItems.TINTED_GLASS_BOTTLE.get());
                         pOutput.accept(ModItems.NYX_ESSENCE_GLASS_BOTTLE.get());

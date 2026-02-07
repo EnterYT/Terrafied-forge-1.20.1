@@ -16,16 +16,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> BEDROCK_SHARD = ITEMS.register("bedrock_shard",
             () -> new Item(new Item.Properties()));
-            // The basic of Terrafied
 
     public static final RegistryObject<Item> BEDROCK_METAL_INGOT = ITEMS.register("bedrock_metal_ingot",
             () -> new Item(new Item.Properties().fireResistant()));
-
     public static final RegistryObject<Item> BEDROCK_METAL_NUGGET = ITEMS.register("bedrock_metal_nugget",
             () -> new Item(new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> BEDROCK_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("bedrock_upgrade_smithing_template",
             () -> new Item(new Item.Properties().fireResistant()));
 
+    public static final RegistryObject<Item> JADE = ITEMS.register("jade",
+            () -> new Item(new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> SCHEELITE = ITEMS.register("scheelite",
+            () -> new Item(new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> TINTED_GLASS_BOTTLE = ITEMS.register("tinted_glass_bottle",
             () -> new Item(new Item.Properties()));
