@@ -40,14 +40,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.BEDROCK.get());
         this.dropSelf(ModBlocks.BEDROCK_METAL_BLOCK.get());
-        this.dropSelf(ModBlocks.THERMAL_SHOCK_BLASTER.get());
         this.dropSelf(ModBlocks.REFINED_BEDROCK.get());
+        this.dropSelf(ModBlocks.VOIDSTONE.get());
+        this.dropSelf(ModBlocks.JADE_BLOCK.get());
+        this.dropSelf(ModBlocks.SCHEELITE_BLOCK.get());
 
         this.add(ModBlocks.BEDROCK_DIAMOND_ORE.get(),
                 createBedrockOreDrops(ModBlocks.BEDROCK_DIAMOND_ORE.get(), Items.DIAMOND));
         this.add(ModBlocks.BEDROCK_ANCIENT_DEBRIS.get(),
                 createBedrockOreDrops(ModBlocks.BEDROCK_ANCIENT_DEBRIS.get(), Blocks.ANCIENT_DEBRIS.asItem()));
 
+        this.dropSelf(ModBlocks.THERMAL_SHOCK_BLASTER.get());
     }
 
     @Override

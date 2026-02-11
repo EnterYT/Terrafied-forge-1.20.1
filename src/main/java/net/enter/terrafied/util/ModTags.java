@@ -25,8 +25,6 @@ public class ModTags {
         public static final TagKey<Item> TERRAFIED_ORES = tag("terrafied_ores");
 
         public static final TagKey<Item> CONSUMED_BY_NYX = tag("consumed_by_nyx");
-        public static final TagKey<Item> WEAK_AGAINST_NYX = tag("weak_against_nyx");
-        public static final TagKey<Item> DURABLE_FOR_NYX = tag("durable_for_nyx");
         public static final TagKey<Item> RESISTANT_TO_NYX = tag("resistant_to_nyx");
         public static final TagKey<Item> NYX_ESSENCE = tag("nyx_essence");
 

@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "BNB",
     "NNN",
-    "BNB"
+    "NBN",
+    "NNN"
   ],
   "result": {
     "item": "terrafied:refined_bedrock"

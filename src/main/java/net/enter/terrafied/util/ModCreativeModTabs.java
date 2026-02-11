@@ -7,12 +7,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.awt.*;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -28,11 +25,18 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.BEDROCK_DIAMOND_ORE.get());
                         pOutput.accept(ModBlocks.BEDROCK_ANCIENT_DEBRIS.get());
 
+                        pOutput.accept(ModBlocks.VOIDSTONE.get());
+                        pOutput.accept(ModBlocks.JADE_BLOCK.get());
+                        pOutput.accept(ModBlocks.SCHEELITE_BLOCK.get());
+
                         pOutput.accept(ModItems.BEDROCK_SHARD.get());
                         pOutput.accept(ModItems.BEDROCK_METAL_NUGGET.get());
                         pOutput.accept(ModItems.BEDROCK_METAL_INGOT.get());
                         pOutput.accept(ModBlocks.BEDROCK_METAL_BLOCK.get());
-                        pOutput.accept(ModItems.BEDROCK_UPGRADE_SMITING_TEMPLATE.get());
+                        pOutput.accept(ModItems.BEDROCK_UPGRADE_SMITHING_TEMPLATE.get());
+
+                        pOutput.accept(ModItems.JADE.get());
+                        pOutput.accept(ModItems.SCHEELITE.get());
 
                         pOutput.accept(ModItems.TINTED_GLASS_BOTTLE.get());
                         pOutput.accept(ModItems.NYX_ESSENCE_GLASS_BOTTLE.get());
@@ -44,6 +48,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.BEDROCK_METAL_AXE.get());
                         pOutput.accept(ModItems.BEDROCK_METAL_SHOVEL.get());
                         pOutput.accept(ModItems.BEDROCK_METAL_HOE.get());
+
+                        pOutput.accept(ModItems.BEDROCK_METAL_HELMET.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_CHESTPLATE.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_LEGGINGS.get());
+                        pOutput.accept(ModItems.BEDROCK_METAL_BOOTS.get());
 
                         pOutput.accept(ModBlocks.THERMAL_SHOCK_BLASTER.get());
                     })

@@ -1,6 +1,7 @@
 package net.enter.terrafied.item;
 
 import net.enter.terrafied.Terrafied;
+import net.enter.terrafied.item.custom.ModArmorItem;
 import net.enter.terrafied.item.custom.NyxEssenceGlassBottle;
 import net.enter.terrafied.item.custom.RiftSensor;
 import net.minecraft.world.item.*;
@@ -15,16 +16,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> BEDROCK_SHARD = ITEMS.register("bedrock_shard",
             () -> new Item(new Item.Properties()));
-            // The basic of Terrafied
 
     public static final RegistryObject<Item> BEDROCK_METAL_INGOT = ITEMS.register("bedrock_metal_ingot",
             () -> new Item(new Item.Properties().fireResistant()));
-
     public static final RegistryObject<Item> BEDROCK_METAL_NUGGET = ITEMS.register("bedrock_metal_nugget",
             () -> new Item(new Item.Properties().fireResistant()));
-    public static final RegistryObject<Item> BEDROCK_UPGRADE_SMITING_TEMPLATE = ITEMS.register("bedrock_upgrade_smiting_template",
+    public static final RegistryObject<Item> BEDROCK_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("bedrock_upgrade_smithing_template",
             () -> new Item(new Item.Properties().fireResistant()));
 
+    public static final RegistryObject<Item> JADE = ITEMS.register("jade",
+            () -> new Item(new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> SCHEELITE = ITEMS.register("scheelite",
+            () -> new Item(new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> TINTED_GLASS_BOTTLE = ITEMS.register("tinted_glass_bottle",
             () -> new Item(new Item.Properties()));
@@ -42,15 +45,28 @@ public class ModItems {
             () -> new RiftSensor(new Item.Properties().durability(100)));
 
     public static final RegistryObject<Item> BEDROCK_METAL_SWORD = ITEMS.register("bedrock_metal_sword",
-            () -> new SwordItem(ModToolTiers.BEDROCK, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.BEDROCK, 3, -2.4f, new Item.Properties()));
+
     public static final RegistryObject<Item> BEDROCK_METAL_PICKAXE = ITEMS.register("bedrock_metal_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.BEDROCK, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.BEDROCK, 1, -2.8f, new Item.Properties()));
+
     public static final RegistryObject<Item> BEDROCK_METAL_AXE = ITEMS.register("bedrock_metal_axe",
-            () -> new AxeItem(ModToolTiers.BEDROCK, 4, 2, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.BEDROCK, 6, -3.0f, new Item.Properties()));
+
     public static final RegistryObject<Item> BEDROCK_METAL_SHOVEL = ITEMS.register("bedrock_metal_shovel",
-            () -> new ShovelItem(ModToolTiers.BEDROCK, 4, 2, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.BEDROCK, 1, -3.0f, new Item.Properties()));
+
     public static final RegistryObject<Item> BEDROCK_METAL_HOE = ITEMS.register("bedrock_metal_hoe",
-            () -> new HoeItem(ModToolTiers.BEDROCK, 4, 2, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.BEDROCK, -2, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> BEDROCK_METAL_HELMET = ITEMS.register("bedrock_metal_helmet",
+            () -> new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> BEDROCK_METAL_CHESTPLATE = ITEMS.register("bedrock_metal_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> BEDROCK_METAL_LEGGINGS = ITEMS.register("bedrock_metal_leggings",
+            () -> new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> BEDROCK_METAL_BOOTS = ITEMS.register("bedrock_metal_boots",
+            () -> new ArmorItem(ModArmorMaterials.BEDROCK, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
 
 
     public static void register(IEventBus eventBus){

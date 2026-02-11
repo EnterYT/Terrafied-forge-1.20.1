@@ -3,6 +3,7 @@ package net.enter.terrafied.block;
 import net.enter.terrafied.Terrafied;
 import net.enter.terrafied.block.custom.CrackedBedrock;
 import net.enter.terrafied.block.custom.TerrafiedBedrock;
+import net.enter.terrafied.block.custom.ThermalShockBlaster;
 import net.enter.terrafied.item.ModItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -54,6 +55,38 @@ public class ModBlocks {
                 }
             });
 
+    public static final RegistryObject<Block> JADE_BLOCK = registryFireproofBlock("jade_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .strength(100.0F, 1200.0F)
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()
+            ));
+    public static final RegistryObject<Block> BUDDING_JADE = registryFireproofBlock("budding_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .strength(100.0F, 1200.0F)
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()
+                    .noLootTable()
+            ));
+
+    public static final RegistryObject<Block> SCHEELITE_BLOCK = registryFireproofBlock("scheelite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .strength(100.0F, 1200.0F)
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()
+            ));
+
+
+    public static final RegistryObject<Block> VOIDSTONE = registryBlock("voidstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(100.0F, 1200.0F)
+                    .mapColor(MapColor.TERRACOTTA_BLACK)
+                    .sound(SoundType.DEEPSLATE)
+                    .requiresCorrectToolForDrops()
+            ));
     public static final RegistryObject<Block> REFINED_BEDROCK = registryFireproofBlock("refined_bedrock",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(100.0F, 1200.0F)
@@ -66,11 +99,12 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
 
     public static final RegistryObject<Block> THERMAL_SHOCK_BLASTER = registryBlock("thermal_shock_blaster",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new ThermalShockBlaster(BlockBehaviour.Properties.of()
                     .strength(25.0F, 1200.0F)
                     .mapColor(MapColor.SAND)
                     .sound(SoundType.NETHERITE_BLOCK)
                     .requiresCorrectToolForDrops()
+                    .noOcclusion()
             ));
             // Uses unique resistance of netherite against extreme temperatures to cause thermal shock of the bedrock
             // Base of netherite block, has interface, requires constant refill of consumables (Any cold block and Any fuel)

@@ -1,7 +1,10 @@
-// 1.20.1	2025-10-14T19:05:17.1199388	Loot Tables
+// 1.20.1	2026-02-08T00:26:16.666278	Loot Tables
 a0edc5e1d9223d47326f9b9787d1a1c66f3a040b data/terrafied/loot_tables/blocks/bedrock.json
 61731242e1f0858e3ff0e25b8449df4eaa311855 data/terrafied/loot_tables/blocks/bedrock_ancient_debris.json
 76cf5654f3bd52c42fe621a9c923f225b0ee305e data/terrafied/loot_tables/blocks/bedrock_diamond_ore.json
 f9f6fff577dd5bd1e5e59b0f961d803f8f62a51d data/terrafied/loot_tables/blocks/bedrock_metal_block.json
+f7d8b903827b7276a70a6d221503534c41ad67b9 data/terrafied/loot_tables/blocks/jade_block.json
 b8e5b555f98262cfdf0a4a74ca9d237f41204f76 data/terrafied/loot_tables/blocks/refined_bedrock.json
+cd401fd2885df6232ce18e2414ed06a42a9b4ff9 data/terrafied/loot_tables/blocks/scheelite_block.json
 e78db0da4f912a84112aa907e51a2f75a5ad5dcb data/terrafied/loot_tables/blocks/thermal_shock_blaster.json
+cd2899bee51d4f7332776b261a44f28212ccfce5 data/terrafied/loot_tables/blocks/voidstone.json
