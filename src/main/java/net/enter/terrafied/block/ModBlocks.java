@@ -3,6 +3,7 @@ package net.enter.terrafied.block;
 import net.enter.terrafied.Terrafied;
 import net.enter.terrafied.block.custom.CrackedBedrock;
 import net.enter.terrafied.block.custom.TerrafiedBedrock;
+import net.enter.terrafied.block.custom.ThermalShockBlaster;
 import net.enter.terrafied.item.ModItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -98,11 +99,12 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
 
     public static final RegistryObject<Block> THERMAL_SHOCK_BLASTER = registryBlock("thermal_shock_blaster",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new ThermalShockBlaster(BlockBehaviour.Properties.of()
                     .strength(25.0F, 1200.0F)
                     .mapColor(MapColor.SAND)
                     .sound(SoundType.NETHERITE_BLOCK)
                     .requiresCorrectToolForDrops()
+                    .noOcclusion()
             ));
             // Uses unique resistance of netherite against extreme temperatures to cause thermal shock of the bedrock
             // Base of netherite block, has interface, requires constant refill of consumables (Any cold block and Any fuel)

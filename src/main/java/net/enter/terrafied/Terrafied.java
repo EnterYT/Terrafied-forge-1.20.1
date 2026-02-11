@@ -2,8 +2,12 @@ package net.enter.terrafied;
 
 import com.mojang.logging.LogUtils;
 import net.enter.terrafied.block.ModBlocks;
+import net.enter.terrafied.block.entity.ModBlockEntities;
+import net.enter.terrafied.screen.ModMenuTypes;
+import net.enter.terrafied.screen.ThermalShockBlasterScreen;
 import net.enter.terrafied.util.ModCreativeModTabs;
 import net.enter.terrafied.item.ModItems;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -35,6 +39,9 @@ public class Terrafied
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -67,7 +74,9 @@ public class Terrafied
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            
+
+
+            MenuScreens.register(ModMenuTypes.THERMAL_SHOCK_BLASTER_MENU.get(), ThermalShockBlasterScreen::new);
         }
     }
 }
