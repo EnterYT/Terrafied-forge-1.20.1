@@ -111,10 +111,12 @@ public class ThermalShockBlasterMenu extends AbstractContainerMenu {
     private void addPlayerInventory(Inventory playerInventory) {
         for (int i = 0; i < 3; i++) {
             for (int l = 0; l < 9; l++) {
-                this.addSlot(new Slot(playerInventory, 1 + i * 9, 8 + l * 18, 84 + i * 18));
+                int slotIndex = l + i * 9 + 9;
+                this.addSlot(new Slot(playerInventory, slotIndex, 8 + l * 18, 84 + i * 18));
             }
         }
     }
+
 
     private void addPlayerHotbar(Inventory playerInventory) {
         for (int i = 0; i < 9; i++) {
